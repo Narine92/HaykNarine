@@ -1,0 +1,383 @@
+.volksWagen{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/bc.png');
+    background-repeat: no-repeat;
+    background-color: #023B56;
+    background-attachment: fixed;
+    background-position: center;
+}
+.main-volks{
+    width: 1737px;
+    height: 1080px;
+    margin:0 auto;
+}
+.logo-shake{
+    margin-top: 91px;
+}
+.volks-text{
+    font-family: 'Team';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.content_count{
+    font-family: 'Team';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.content_countNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Team';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 50px;
+    line-height: 39px; */
+    text-align: center;
+    /* color: #82DADC; */
+    box-sizing: border-box;
+
+position: absolute;
+left: 21.88%;
+right: 21.82%;
+top: 41.11%;
+bottom: 39.91%;
+
+background: #01161B;
+border: 3px solid #82DADC;
+border-radius: 102.5px;
+}
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: calc(50% - 278px);
+    justify-content: center;
+    /*position: absolute;*/
+}
+.imageWrapper > img {
+    width: 556px;
+}
+.imageWrapper1{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    left: calc(75% - 1000px);
+    justify-content: center;
+    /*position: absolute;*/
+    
+}
+.imageWrapper1 > img {
+    width: 1000px;
+}
+.btn-next-1{
+    width: 435px;
+    height: 109px;
+    background: #F04D4D;
+    box-shadow: 0px 3px 22px rgba(150, 209, 219, 0.62);
+    border-radius: 65.8714px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    text-align: center;
+}
+.next-text{
+    font-family: 'Team';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 7%;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 561px;
+    overflow: hidden;
+    padding: 0.4em;
+}
+.slideCarDown{
+    font-size: 3.5em;
+    animation: Slide_Down 5s;
+    animation-fill-mode: forwards;
+}
+
+.innerUp{
+    position: absolute;
+    align-items: center;
+    z-index: 3;
+    left: calc(50% - 550px);
+    top: 561px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.4em;
+    width: 1091px;
+}
+
+.buttonsWrapper{
+    /*position: absolute;*/
+    align-items: center;
+    z-index: 3;
+    left: calc(50% - 550px);
+    top: 561px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.4em;
+    width: 1091px;
+}
+
+
+
+.slideButtonsUp{
+    font-size: 3.5em;
+    animation: Slide_Up 5s;
+    /* transition: top 6s ease; */
+    top: 140px;
+}
+
+.slideButtonsDown{
+    font-size: 3.5em;
+    animation: Slide_Down 5s;
+    /* transition: top 6s ease; */
+    top: 561px;
+}
+
+
+
+
+.innerDown{
+    /*position: absolute;*/
+    align-items: center;
+    z-index: 3;
+    left: calc(50% - 550px);
+    bottom: 561px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.4em;
+    width: 1091px;
+}
+
+
+.up{
+    font-size: 3.5em;
+    animation: Slide_Up 3s;
+    animation-fill-mode: forwards;
+}
+
+.up-restart{
+    font-size: 3.5em;
+    animation: Slide_Up_Restart 5s;
+    animation-fill-mode: forwards;
+}
+.up-iphone {
+    font-size: 3.5em;
+    animation: Slide_Up_IPhone 5s;
+    animation-fill-mode: forwards;
+}
+.down{
+    font-size: 3.5em;
+    animation: Slide_Down 5s;
+    animation-fill-mode: forwards;
+}
+.spin > img {
+    animation: Spin 3.5s linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+
+}
+.stop > img{
+    animation: Stop;
+    animation-fill-mode: forwards;
+
+}
+.slide-box{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    width: 1000px;
+    /*height: 1000px;*/
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    top: -50vh;
+    /*padding-bottom: 561px;*/
+}
+.box2 {
+    z-index: 2;
+}
+.box3 {
+    z-index: 3;
+}
+.box4 {
+    z-index: 4;
+}
+
+
+@keyframes Slide_Down {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(600px);
+    }
+
+}
+@keyframes Slide_Up {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        /*z-index:99999;*/
+        transform: translateY(-50%);
+    }
+}
+@keyframes Slide_Up_Restart {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        /*z-index:99999;*/
+        transform: translateY(-80%);
+    }
+}
+@keyframes Slide_Up_IPhone {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        /*z-index:99999;*/
+        transform: translateY(-10%);
+    }
+}
+@keyframes Slide_Up {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        /*z-index:99999;*/
+        transform: translateY(-50%);
+    }
+}
+@keyframes Spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Stop {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(0);
+    }
+    
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    /*position: absolute;*/
+    width: 500px;
+    height: 100px;
+    left: calc(50% - 250px);
+    top: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 103px -103px 103px rgba(165, 165, 165, 0.022), inset -103px 103px 103px rgba(255, 255, 255, 0.022);
+    backdrop-filter: blur(22.66px);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.btn-next{
+    width: 480px;
+    height: 109px;
+    margin-right: 24px;
+    text-align: center;
+    left: 462px;
+    top: 810px;
+    background: #F04D4D;
+    box-shadow: 0px 3px 22px rgba(150, 209, 219, 0.62);
+    border-radius: 65.8714px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.btn-next > span {
+    text-align: center;
+}
+.btn-next1{
+    box-sizing: border-box;
+    width: 480px;
+    height: 109px;
+    left: 977px;
+    top: 810px;
+    background: #FFFFFF;
+    border: 3px solid #F04E4D;
+    box-shadow: 0px 3px 22px rgba(150, 209, 219, 0.62);
+    border-radius: 65.8714px;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    align-items: center;
+
+    color: #F04D4D;
+}
+.buttons{
+    height: 220px;
+    width: 1000px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.movable-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+}
+
+
+
+
+
+
