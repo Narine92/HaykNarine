@@ -11,6 +11,9 @@ const Login = ({ setIsLoggedIn }) => {
 
     const handleLogin = () => {
         let item={username,password};
+        // const shouldRedirect = true;
+
+        // const navigate = useNavigate();
         
         fetch(`${API_URL}/auth/sign-in`, {
             method:"POST",
@@ -20,6 +23,7 @@ const Login = ({ setIsLoggedIn }) => {
             },
             body: [JSON.stringify(item)]
         }).then((res) => res.json()).then((res) => {
+
             if(username==="User_1"){
             localStorage.setItem("token",JSON.stringify(res))
             setIsLoggedIn(true);}

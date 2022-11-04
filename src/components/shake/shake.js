@@ -66,6 +66,15 @@ const hiddenNumber = (number) => number.slice(0, number.length - 2) + '**';
                     <p className="content_count">Կուտակված կտրոններ՝</p>
                     <p className="content_countNumber">89456284</p>
                     <div className='content_countNumber'>
+                        <div className='div1'></div>
+                        <div className='div2'></div>
+                        <div className='div3'></div>
+                        <div className='div4'></div>
+                        <div className='div5'></div>
+                        <div className='div6'></div>
+                        <div className='div7'></div>
+                        <div className='div8'></div>
+
                         <div className='number'>{displayNumber}</div>
                     </div>
                     <p>
